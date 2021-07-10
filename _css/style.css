@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing:border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+body{  
+    background-image: linear-gradient(to top,#045edb,#07a8f2,#04d0db);
+    background-attachment: fixed;
+}
+/*HEADER*/
+#h1-header{
+    color: rgba(255, 255, 255, 0.911);
+}
+.bg-blue{
+    background-color: rgba(10, 10, 10, 0.061) !important;
+    /*background-image: linear-gradient(to left,#045edb5d,#07a8f2bb,#04d0dbc2);
+    background-attachment: fixed;*/
+}
+.navbar-wite .navbar-brand {
+    color: rgba(0, 0, 0, 0.55);
+}
+.navbar-wite .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: rgba(0, 0, 0, 0.55);
+}
+.navbar-wite .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.55);
+}
+.navbar-wite .navbar-nav .nav-link:hover, .navbar-wite .navbar-nav .nav-link:focus {
+    color: rgba(0, 0, 0, 0.55);
+}
+.navbar-wite .navbar-nav .nav-link.disabled {
+    color: rgba(0, 0, 0, 0.55);
+}
+.navbar-wite .navbar-nav .show > .nav-link,
+.navbar-wite .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 0.911); /*cor menu*/
+}
+.navbar-wite .navbar-toggler {
+color: rgba(0, 0, 0, 0.55);
+border-color: rgba(0, 0, 0, 0.1);
+}
+.navbar-wite .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-wite .navbar-text {
+color: rgba(0, 0, 0, 0.55);
+}
+.navbar-wite .navbar-text a,
+.navbar-wite .navbar-text a:hover,
+.navbar-wite .navbar-text a:focus {
+color: rgba(0, 0, 0, 0.9);
+}
+/******/
+/*ASSIDE*/
+.asside h1, p{
+    margin: 20px 40px;
+    color: rgba(0, 0, 0, 0.89);
+    
+}
+.asside{
+    background-color: rgba(255, 255, 255, 0.979);
+    height: 60vh;
+    display: grid;
+}
+/*FOOTER*/
+footer{
+   /* background-color: rgba(10, 10, 10, 0.061) !important;*/
+   background-color: rgba(12, 12, 12, 0.705);
+}
+footer img{
+    position: relative;
+    margin-top:-30px;
+}
+#footer{   
+    padding: 50px;
+}
+#footer p,span{
+    color: rgba(255, 255, 255, 0.767);
+}
+span{
+    font-size: 12px;
+}
