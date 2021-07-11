@@ -7,54 +7,111 @@
     <title>Tesouros do Mar</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="_css/style.css">
     <link rel="stylesheet" href="_css/bootstrap.css">
     <script src="JavaScript/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <header class="bg-blue">
-        <div class="text-center"><img src="imagens/logo-header.png" alt="logo-header">
-        <h1 id="h1-header">Tesouros do Mar</h1>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-wite">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="imagens/logo-nav.png" width="50" alt="logo-nav" srcset=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-              </div>
+  <header class="bg-blue" id="header">
+      <div class="text-center"><img src="imagens/logo-header.png" alt="logo-header">
+      <h1 id="h1-header">Tesouros do Mar</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-wite" id="nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="imagens/logo-nav.png" width="40" alt="logo-nav" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-    </header>
+          </div>
+        </nav>
+  </header>
     <!--*********************-->
-    <div class="asside">
-        <h1>Features</h1>
-        <p>O clube de desbravador trabalha com crianças e adolescente de 10 a 15 anos. Nossa missão é Salvar do Pecado e guiar no serviço. Todos são bem vindos, não fazemos acepção de pessoas.</p>
-    </div>
+  <div class="asside" style="height: 40vh;">
+      <h1>Features</h1>
+      <p>O clube de desbravador trabalha com crianças e adolescente de 10 a 15 anos. Nossa missão é Salvar do Pecado e guiar no serviço. Todos são bem vindos, não fazemos acepção de pessoas.</p>
+  </div>
 
-    <footer class="text-center">
-        <img src="imagens/logo-nav.png" width="80"  alt="logo-nav" srcset="">
-        <div id="footer">
-            <hr style="color: white;">
-        <p><strong>&copy;Tesouros do Mar</strong></p>
-        <span>by Antonio Marcos</span>
+  <footer>
+    <div class="text-center">
+      <a href="#header"><img class="logo-footer" src="imagens/logo-nav.png" width="80"  alt="logo-nav"></a>
+    </div>
+    <div class="main-content">
+        <div class="left box">
+            <h2>Sobre Nós</h2>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque dolor, maxime delectus et accusantium ipsam ad repudiandae, commodi adipisci velit voluptates beatae saepe quas magni sequi eius libero id.</p>
+                <div class="social">
+                  <a href="https://www.facebook.com/tesourosdomar" target="_blank"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#"><span class="fab fa-twitter"></span></a>
+                  <a href="https://www.instagram.com/tesourosdomar_/" target="_blank"><span class="fab fa-instagram"></span></a>
+                  <a href="https://www.youtube.com/channel/UC47MmAoBS93AF_y6EuZ5T9w/featured" target="_blank"><span class="fab fa-youtube"></span></a>
+                </div><!--social-->
+            </div><!--content-->
+        </div><!--left box-->
+        <div class="center box">
+            <h2>Endereço</h2>
+            <div class="content">
+                <div class="place">
+                    <a href="https://www.google.com.br/maps/place/Igreja+Adventista+do+7º+Dia+-+Cajazeiras+XI%2F+Sede/@-12.8814444,-38.4124964,18z/data=!4m12!1m6!3m5!1s0x716116ff5474bbb:0xc0836e3e4b465172!2sIgreja+Adventista+do+7º+Dia+-+Cajazeiras+XI%2F+Sede!8m2!3d-12.8814205!4d-38.4112893!3m4!1s0x716116ff5474bbb:0xc0836e3e4b465172!8m2!3d-12.8814205!4d-38.4112893" target="_blank"><span class="fas fa-map-marker"></span></a>
+                    <span class="text">R. Juscelino Kubitschek - Cajazeiras 11, Salvador - BA</span>
+                </div>
+  
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+55 61 9 8231-0502</span>
+                </div>
+  
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">exemplo@gmail.com</span>
+                </div>
+            </div>
+        </div><!--center box-->
+        <div class="right box">
+            <h2>Contato</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                    </div>
+  
+                    <div class="msg">
+                        <div class="text">Mensagem *</div>
+                        <textarea cols="25" rows="2" required></textarea>
+                    </div>
+                    <div class="btnn">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div><!---right box-->
+    </div><!--main-content-->
+    <div class="bottom">
+        <div class="center">
+            <span class="credit">Criado por <a href="https://www.instagram.com/marcossktt1/" target="_blank">Marcos</a><span class="far fa-copyright">2021 Todos os direitos reservados</span> </span>
         </div>
-    </footer>
+    </div>
+  </footer>
 
 </body>
 </html>
