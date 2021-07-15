@@ -15,9 +15,12 @@ body{
 }
 /*HEADER*/
 header{
-    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+#logo-header{
+    padding-top: 50px;
 }
 #nav{
     margin-bottom: -19px;
@@ -27,8 +30,6 @@ header{
 }
 .bg-blue{
     background-color: rgba(10, 10, 10, 0.034) !important;
-    /*background-image: linear-gradient(to left,#045edb5d,#07a8f2bb,#04d0dbc2);
-    background-attachment: fixed;*/
 }
 .navbar-wite .navbar-brand {
     color: rgba(0, 0, 0, 0.55);
@@ -66,19 +67,27 @@ color: rgba(0, 0, 0, 0.9);
 }
 
 /*ASSIDE*/
-.asside h1, h2, p{
+.asside h1, p{
     margin: 20px 40px;
-    color: rgba(0, 0, 0, 0.89);
-    
+    color: #032342; 
+    font-weight: 500; 
+}
+h1,h2{
+    padding-top: 20px;
 }
 .asside{
     background-color: rgba(255, 255, 255, 0.979);
     padding-bottom: 70px;
+    font-family: 'Poppins', sans-serif;
 }
 .videos iframe{
     box-shadow: 2px 2px 5px #04152c;
 }
-@media only screen and (max-width: 560px) {
+.videos h3{
+    margin: 20px 0px 20px;
+}
+/*videos index*/
+@media only screen and (max-width: 560px){
     iframe{
         width: 90%;
         height: 284px;
@@ -89,93 +98,202 @@ color: rgba(0, 0, 0, 0.9);
         
     }
 }
-@media only screen and (min-width:1200px){
-    .videos{
-        display: flex;
-        padding: 20px;
-        margin-left: 0px;
+@media only screen and (min-width:900px){
+    .videos div{
+        display: inline-block;
+        margin: auto;
     }
     iframe{
-        margin: 10px;
-        text-align: center;
+        width: 800px;
+        height: 450px;
+        margin: 20px 0px 0px 20px;
     }
 }
-@media only screen and (min-width:1300px){
-    .videos{
-        display: flex;
-        padding: 20px;
-        margin-left: 50px;
-    }
-    iframe{
-        margin: 10px;
-        text-align: center;
-    }
+/*img - about us*/
+.rpg img{
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    box-shadow: 2px 2px 5px #0000007c;
+    border-radius: 10px;
+    padding: 5px;
 }
-@media only screen and (min-width:1350px){
-    .videos{
-        display: flex;
-        padding: 20px;
-        margin-left: 60px;
+
+@media only screen and (max-width: 700px){
+    .rpg img{
+        width: 90%;
+        margin-bottom: 30px;
     }
-    iframe{
-        margin: 10px;
+    .texto p{
+        text-align: left;
+    }
+    .carousel{
+        width: 90%;
+        margin: auto;
+        border: 1px solid rgba(255, 255, 255, 0.74);
+        box-shadow: 2px 2px 5px #0000007c;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .asside .texto-carousel{
+        margin: 0px 0px 20px;
+        text-align: center;
+     }
+}
+#about-us p,h1{
+    margin: 25px 50px ;
+    text-align: left;
+    font-size: 15pt;
+}
+
+/*carousel*/
+
+@media only screen and (min-width:700px){
+    .carousel{
+        width: 600px;
+        margin: auto;
+        border: 1px solid rgba(255, 255, 255, 0.74);
+        box-shadow: 2px 2px 5px #0000007c;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .texto p{
+        text-align: left;
+    }
+    .asside .texto-carousel{
+        margin: 50px 0px 20px;
+        text-align: center;
+        position: relative;
+    }
+    .texto-carousel h1{
         text-align: center;
     }
 }
 @media only screen and (min-width:1400px){
-    .videos{
+    .carousel-main{
         display: flex;
-        padding: 20px;
-        margin-left: 80px;
     }
-    iframe{
-        margin: 10px;
-        text-align: center;
+    .rpg img{
+        margin-left: -110px;
+    }
+    .carousel-son{
+        position: relative;
+    }
+    .carousel{
+        margin-right: 25px;
+        
+    }
+    .carousel-son .texto-carousel{
+        margin-bottom: 50px;
+        margin-top: 190px;
     }
 }
-@media only screen and (min-width:1450px){
-    .videos{
+@media only screen and (min-width:1420px){
+    .carousel-main{
         display: flex;
-        padding: 20px;
-        margin-left: 130px;
     }
-    iframe{
-        margin: 10px;
-        text-align: center;
+    .rpg img{
+        margin-left: -110px;
+    }
+    .carousel-son{
+        position: relative;
+    }
+    .carousel{
+        margin-right: 25px;
+        
+    }
+    .carousel-son .texto-carousel{
+        margin-bottom: 50px;
+        margin-top: 160px;
     }
 }
-@media only screen and (min-width:1500px){
-    .videos{
+
+@media only screen and (min-width:1440px){
+    .carousel-main{
         display: flex;
-        padding: 20px;
-        margin-left: 200px;
     }
-    iframe{
-        margin: 10px;
-        text-align: center;
+    .rpg img{
+        margin-left: -110px;
+    }
+    .carousel-son{
+        position: relative;
+    }
+    .carousel{
+        margin-right: 25px;
+        
+    }
+    .carousel-son .texto-carousel{
+        margin-bottom: 50px;        
     }
 }
-@media only screen and (min-width:1550px){
-    .videos{
+@media only screen and (min-width:1460px){
+    .carousel-main{
         display: flex;
-        padding: 20px;
-        margin-left: 200px;
     }
-    iframe{
-        margin: 10px;
-        text-align: center;
+    .rpg img{
+        margin-left: -110px;
+    }
+    .carousel-son{
+        position: relative;
+    }
+    .carousel{
+        margin-right: 25px;
+        
+    }
+    .carousel-son .texto-carousel{
+        margin-bottom: 50px;
+        margin-top: 150px;
     }
 }
+.texto p{
+    font-size: 14pt;
+}
+@media only screen and (min-width:1480px){
+    .carousel-main{
+        display: flex;
+    }
+    .rpg img{
+        margin-left: -110px;
+    }
+    .texto{
+        text-align: left;
+        
+    }
+    .carousel-son{
+        position: relative;
+    }
+    .carousel{
+        margin-right: 50px;
+        
+    }
+    .carousel-son .texto-carousel{
+        margin-bottom: 50px;
+       /* margin-top: 85px;*/
+       margin-top: 120px;
+    }
+}
+
 @media only screen and (min-width:1600px){
-    .videos{
+    .carousel-main{
         display: flex;
-        padding: 20px;
-        margin-left: 320px;
     }
-    iframe{
-        margin: 10px;
-        text-align: center;
+    .rpg img{
+        margin-left: -200px;
     }
+    .carousel-son{
+        position: relative;
+    }
+    .carousel{
+        margin-right: 25px;
+        
+    }
+    .carousel-son .texto-carousel{
+        margin-bottom: 50px;
+        margin-top: 110px;
+        /*margin-left: -150px;*/
+        margin-left: 0px;
+    }
+   .carousel{
+    margin-right: 90px;
+   }
 }
 
 /*----->>>FOOTER<<<-----*/
@@ -219,7 +337,7 @@ footer{
     content: '';
     height: 2px;
     width: 100%;
-    background-color: #011b2593;
+    background-color: #043e5593;
     top: -10px;
 }
 .left .content .social{
@@ -327,7 +445,7 @@ footer{
 .bottom .center a:hover{
     text-decoration: underline;
 }
- @media screen and (max-width:900px){
+@media screen and (max-width:900px){
     footer{
         position: relative;
         bottom: 0px;
@@ -340,6 +458,5 @@ footer{
         margin: 5px 0;
     }
 }
- 
-/*----------------*/
+/*carousel*/
 
