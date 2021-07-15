@@ -13,10 +13,11 @@
     <script src="JavaScript/bootstrap.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="JavaScript/bootstrap.js"></script>
 </head>
 <body>
-  <header class="bg-blue" id="header">
-      <div class="text-center"><img src="imagens/logo-header.png" alt="logo-header">
+  <header class="bg-blue">
+      <div id="logo-header" class="text-center"><img src="imagens/logo-header.png" alt="logo-header">
       <h1 id="h1-header">Tesouros do Mar</h1>
       </div>
       <nav class="navbar navbar-expand-lg navbar-wite" id="nav">
@@ -31,13 +32,7 @@
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a class="nav-link active" href="about-us.html">About Us</a>
                 </li>
               </ul>
             </div>
@@ -50,29 +45,77 @@
     <p>O Clube de Desbravadores é uma organização da Igreja Adventista do Sétimo Dia ao redor do mundo, ajudando e ensinando jovens e juvenis trabalhando na área fisica, mental e espiritual.
     </p>
     <div class="text-center videos">
-      <div id="ordem-unida">
-        <h3>Ordem unida, o que é?</h3>
+      <div id="quem-sao">
+        <h3>Quem são os Desbravadores</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L1d4Uao8zwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="ord-unida">
+        <h3>Mostra de Ordem Unida - Tesouros do Mar 2017 - 19º RDB</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/pxv0evrPTDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div id="barraca">
-        <h3>Como montar uma Barraca</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gTleWPZOwV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-main">
+      <div class="text-center rpg">
+        <div class="texto">
+          <h1>1º Encontro do RPG: ESPADAS E TRONOS</h1>
+          <p>Você está procurando viver uma aventura? Não sabe o que fazer com seus sábados a tarde?O Tesouros do Mar tem a resposta!Estaremos fazendo o lançamento do nosso RPG Espadas&Tronos com nossa primeira campanha em breve! Fique atento às redes sociais do clube para saber data e horário!</p>
+        </div>
+        <img src="imagens/rpg-espada-trono.jpg" alt="">
       </div>
+      <!--
+      <div>
+        <h1>1º Encontro do RPG: ESPADAS E TRONOS</h1>
+        <p>Você está procurando viver uma aventura? Não sabe o que fazer com seus sábados a tarde?O Tesouros do Mar tem a resposta!Estaremos fazendo o lançamento do nosso RPG Espadas&Tronos com nossa primeira campanha em breve! Fique atento às redes sociais do clube para saber data e horário!</p>
+        <div class="text-center rpg"><img src="imagens/rpg-espada-trono.jpg" alt=""></div>
+      </div>
+      -->    
+      <div class="carousel-son"> 
+        <div class="texto-carousel">
+          <h1>Nossos Destaques</h1>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagens/matriculas-abertas.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/conheco-meu- clube.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/suportaivos.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div><!--CAROUSEL-->
     </div>
   </div>
-
+  <!--RODAPÉ-->
   <footer>
     <div class="text-center">
       <a href="#header"><img class="logo-footer" src="imagens/logo-nav.png" width="80"  alt="logo-nav"></a>
     </div>
     <div class="main-content">
         <div class="left box">
-            <h2>Sobre Nós</h2>
+            <h2>About Us</h2>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque dolor, maxime delectus et accusantium ipsam ad repudiandae, commodi adipisci velit voluptates beatae saepe quas magni sequi eius libero id.</p>
+                <p>O clube de Desbravadores Tesouros do Mar, fundado em 17 de Janeiro de 1999, tem como objetivo trabalhar a parte fisica, mental e espirtual de juvenis e jovens de 10 a 15 anos.<br><strong>Reunião:</strong>Domingos das 8:00hr as 11:00hr.
+                </p>
                 <div class="social">
                   <a href="https://www.facebook.com/tesourosdomar" target="_blank"><span class="fab fa-facebook-f"></span></a>
-                  <a href="#"><span class="fab fa-twitter"></span></a>
+                  <!--<a href="#"><span class="fab fa-twitter"></span></a>-->
                   <a href="https://www.instagram.com/tesourosdomar_/" target="_blank"><span class="fab fa-instagram"></span></a>
                   <a href="https://www.youtube.com/channel/UC47MmAoBS93AF_y6EuZ5T9w/featured" target="_blank"><span class="fab fa-youtube"></span></a>
                 </div><!--social-->
@@ -82,18 +125,18 @@
             <h2>Endereço</h2>
             <div class="content">
                 <div class="place">
-                    <span class="fas fa-map-marker"></span>
-                    <span class="text">Av.Brasil, Nova Capital</span>
+                  <a href="https://www.google.com.br/maps/place/Igreja+Adventista+do+7º+Dia+-+Cajazeiras+XI%2F+Sede/@-12.8814444,-38.4124964,18z/data=!4m12!1m6!3m5!1s0x716116ff5474bbb:0xc0836e3e4b465172!2sIgreja+Adventista+do+7º+Dia+-+Cajazeiras+XI%2F+Sede!8m2!3d-12.8814205!4d-38.4112893!3m4!1s0x716116ff5474bbb:0xc0836e3e4b465172!8m2!3d-12.8814205!4d-38.4112893" target="_blank"><span class="fas fa-map-marker"></span></a>
+                  <span class="text">R. Juscelino Kubitschek - Cajazeiras 11, Salvador - BA</span>
                 </div>
 
                 <div class="phone">
-                    <span class="fas fa-phone-alt"></span>
-                    <span class="text">+55 61 9 8231-0502</span>
+                  <span class="fas fa-phone-alt"></span>
+                  <span class="text">+55 71 9 0000-0000</span>
                 </div>
 
                 <div class="email">
                     <span class="fas fa-envelope"></span>
-                    <span class="text">exemplo@gmail.com</span>
+                    <span class="text">clubeCDTM@gmail.com</span>
                 </div>
             </div>
         </div><!--center box-->
@@ -102,16 +145,16 @@
             <div class="content">
                 <form action="#">
                     <div class="email">
-                        <div class="text">Email *</div>
-                        <input type="email" required>
+                      <div class="text">Email *</div>
+                      <input type="email" required>
                     </div>
 
                     <div class="msg">
-                        <div class="text">Mensagem *</div>
-                        <textarea cols="25" rows="2" required></textarea>
+                      <div class="text">Mensagem *</div>
+                      <textarea cols="25" rows="2" required></textarea>
                     </div>
                     <div class="btnn">
-                        <button type="submit">Enviar</button>
+                      <button type="submit">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -119,7 +162,7 @@
     </div><!--main-content-->
     <div class="bottom">
         <div class="center">
-            <span class="credit">Criado por <a href="#">Marcos</a><span class="far fa-copyright">2021 Todos os direitos reservados</span> </span>
+          <span class="credit">Criado por<a href="https://www.instagram.com/marcossktt1/" target="_blank">Marcos</a>&copy;2021 Todos os direitos reservados</span>
         </div>
     </div>
   </footer>
